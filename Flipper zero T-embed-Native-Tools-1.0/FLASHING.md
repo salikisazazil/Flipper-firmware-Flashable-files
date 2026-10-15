@@ -1,5 +1,8 @@
 # Flashing the T-Embed ESP32-S3
 
+**For Spacehuhn browser flashing, use [the step-by-step guide](../FLASHING.md).**
+The commands below are an alternative Python flashing method.
+
 Use these images only for the T-Embed CC1101 / CC1101 Plus configuration with
 16 MiB flash used by this WirelessPi build. They are not Flipper Zero images.
 RTL433 alone can use the previous firmware; the new cSploit Mini packet/TCP

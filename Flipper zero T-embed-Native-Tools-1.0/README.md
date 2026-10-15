@@ -6,16 +6,16 @@ for this ESP32 port, not stock Flipper Zero firmware.
 
 ## Included
 
-- **RTL433 1.0:** CC1101 OOK/FSK receiver and rtl_433 decoder adaptation,
+- **RTL433 1.1.6:** CC1101 OOK/FSK receiver and rtl_433 decoder adaptation,
   selectable decoders, history, full JSON details, SD logs/exports, raw-pulse
-  save/load and offline decoding. See `docs/RTL433.md` for radio limitations.
+  save/load and offline decoding. See the README in `../RTL433-1.1.6-source.zip` for current features and radio limitations.
 - **cSploit Mini 1.0:** native LAN/TCP diagnostics, DNS/HTTP inspection,
   TCP/UDP text requests, one-target ARP relay, exact-name DNS redirect,
   LLMNR/NBT-NS responses and an HTTP exposure indicator. See
   `docs/cSploit-Mini.md` for the exact scope and configuration.
 - Compact font and launcher icons for both apps.
 - Firmware `2.0.0-native-tools1`, flash helper, complete project source and
-  build/test logs.
+  app validation logs in the RTL433 source ZIP.
 
 These are selected native implementations, not complete desktop rtl_433 or
 Android cSploit/dSploit ports. The exposure indicator records connection and
@@ -23,6 +23,9 @@ Authorization-header presence only; it discards values and does not collect
 passwords, session tokens or authentication hashes.
 
 ## Install
+
+For browser flashing, follow [the Spacehuhn guide](../FLASHING.md).
+RTL433 1.1.6 is an app-only update compatible with this Native Tools firmware.
 
 1. Copy the contents of `SD/` into the root of the device's SD card, merging
    folders and keeping your other apps and data.
@@ -70,29 +73,9 @@ delivery. No HTTPS certificate bypass is included.
 
 ## Build from source
 
-Extract `source/WirelessPi-Native-Tools-1.0-source.zip`.
-Use ESP-IDF v5.4.1, commit
-`4c2820d377d1375e787bcef612f0c32c1427d183`, with its submodules and ESP32-S3
-toolchain installed. The external SDK/toolchain are not bundled. Keep the
-project's dependency lockfile; ESP-IDF fetches its managed components.
-
-In the ESP-IDF Python environment install `idf-component-manager==2.2.2`
-and Pillow. Source the SDK's `export.sh`, then run from the extracted project:
-
-```sh
-bash BUILD-NATIVE-TOOLS.sh
-```
-
-This uses `sdkconfig.wifite` and the `lilygo_t_embed_cc1101` target. Outputs:
-`build_native/furi_esp32.bin` and `build_native/fap/*.fap`.
-The existing project includes SDK adapter/patch steps; see `BUILD-WIFITE.md`.
-
-Host tests (Linux, C compiler with sanitizers):
-
-```sh
-bash applications_user/rtl433/tests/run.sh
-bash applications_user/csploit_mini/tests/run.sh
-```
+See [source and build instructions](../SOURCE.md) for the original complete
+firmware archive and the RTL433 1.1.6 overlay. The original archive alone builds
+the original RTL433 version; apply the overlay to build the included updated FAP.
 
 All source licenses and upstream notices are preserved. RTL433 decoder
 provenance is in `docs/RTL433-UPSTREAM.md`; the new cSploit Mini app and network

@@ -35,13 +35,30 @@
   "apps": [
     {
       "path": "SD/apps/Sub-GHz/rtl433.fap",
-      "bytes": 1420580,
-      "sha256": "3a5f7f17fe9cd9e41df1f05f59e5dc63914099b6ea7898d647f781c386ad4641"
+      "bytes": 1464880,
+      "sha256": "f5dcedaad408a08c23db98bfb2b97240a494dd6551dcb6509b9fb4507029f2b2",
+      "version": "1.1.6"
     },
     {
       "path": "SD/apps/WiFi/csploit_mini.fap",
       "bytes": 76048,
-      "sha256": "93b0528734f59fe8f23a8b82b936c6e12d89c7d4a97c633051d4290e063c7bd5"
+      "sha256": "93b0528734f59fe8f23a8b82b936c6e12d89c7d4a97c633051d4290e063c7bd5",
+      "version": "1.0"
     }
-  ]
+  ],
+  "source": {
+    "instructions": "../SOURCE.md",
+    "archives": [
+      {
+        "path": "../WirelessPi-Native-Tools-1.0-source.tar.xz",
+        "bytes": 25983208,
+        "sha256": "6bd81a84bee55d93852f7b6b98af8e291cb795eb21e5e2df3f346bebcc822ead"
+      },
+      {
+        "path": "../RTL433-1.1.6-source.zip",
+        "bytes": 1086728,
+        "sha256": "9ac546c2b50b6ace191a26cff675175e8cb63d606a97e5b2eb02c45f3c18e325"
+      }
+    ]
+  }
 }
