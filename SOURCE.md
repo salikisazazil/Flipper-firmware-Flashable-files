@@ -66,3 +66,7 @@ The packaged firmware and FAP binaries were matched to the corresponding
 release artifacts before adding these sources. Rebuilding is not promised
 to produce byte-identical binaries across different toolchains, paths and
 build timestamps. Firmware images are unchanged by this source upload.
+
+## All requested app sources
+
+[WirelessPi-Native-Tools-All-Apps-source.zip](WirelessPi-Native-Tools-All-Apps-source.zip) contains WIFITE 0.8.1, RTL433 1.1.6, Wardriver 1.5.2, WDGWars Map 1.3, BW16 I2C 4.5 and ProtoPirate 3.6.3. The five non-RTL433 directories are already present in the full firmware source archive; this ZIP makes them accessible together with the latest packaged RTL433 source. ProtoPirate here is the WirelessPi ESP32 FAP 3.6.3, not the separate Bruce JavaScript port.

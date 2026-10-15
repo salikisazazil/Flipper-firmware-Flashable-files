@@ -78,9 +78,14 @@ Firmware flashing does not copy `.fap` apps to the SD card.
    firmware's supported file-transfer method.
 2. Copy the **contents** of `Flipper zero T-embed-Native-Tools-1.0/SD/` to
    the **root** of the SD card, merging folders and preserving unrelated data.
-3. The resulting paths must be:
+3. Copy `apps_assets/` too: ProtoPirate needs all 34 `.fal` plugins under `apps_assets/proto_pirate/plugins/`. The app paths include:
    - `apps/Sub-GHz/rtl433.fap` — **RTL433 1.1.6**
    - `apps/WiFi/csploit_mini.fap` — **cSploit Mini 1.0**
+   - `apps/WiFi/wifite.fap` — **WIFITE 0.8.1**
+   - `apps/WiFi/wardriver.fap` — **Wardriver 1.5.2**
+   - `apps/WiFi/wdgwars_map.fap` — **WDGWars Map 1.3**
+   - `apps/GPIO/bw16_r4tkn_i2c.fap` — **BW16 I2C 4.5**
+   - `apps/Sub-GHz/proto_pirate.fap` — **ProtoPirate 3.6.3**
 4. Safely eject/reinsert the card as appropriate and open the apps from the
    firmware's application browser.
 

@@ -5,8 +5,8 @@ Firmware **2.0.0-native-tools1** for the **LilyGo T-Embed CC1101 / CC1101 Plus
 WirelessPi is the build name; no Raspberry Pi is required.
 
 - **[Flash with Spacehuhn ESPWebTool](FLASHING.md)** — step-by-step browser instructions and verified addresses.
-- **[Firmware and SD apps](Flipper%20zero%20T-embed-Native-Tools-1.0/)** — four firmware images, RTL433 1.1.6 and cSploit Mini 1.0.
-- **[Source and build instructions](SOURCE.md)** — complete original firmware source archive and RTL433 1.1.6 source overlay.
+- **[Firmware and SD apps](Flipper%20zero%20T-embed-Native-Tools-1.0/)** — four firmware images plus WIFITE, RTL433, Wardriver, WDGWars Map, BW16 I2C, ProtoPirate 3.6.3 and cSploit Mini.
+- **[Source and build instructions](SOURCE.md)** — complete original firmware source and separate all-app source ZIP.
 - **[Checksums](Flipper%20zero%20T-embed-Native-Tools-1.0/SHA256SUMS.txt)** and **[release manifest](Flipper%20zero%20T-embed-Native-Tools-1.0/release-manifest.json)**.
 
 Download this repository using **Code → Download ZIP**, then extract it.

@@ -1,2 +1,4 @@
 9ac546c2b50b6ace191a26cff675175e8cb63d606a97e5b2eb02c45f3c18e325  RTL433-1.1.6-source.zip
 6bd81a84bee55d93852f7b6b98af8e291cb795eb21e5e2df3f346bebcc822ead  WirelessPi-Native-Tools-1.0-source.tar.xz
+ac57e4b0f854f47846638110f9ddb87d3eb148a7d4114c23c9582893b4e29803  WirelessPi-Native-Tools-All-Apps-source.zip
+b8ce8c6019a182d2e75c832267bd24eb40e4ce4e8921219598140b53b7d3e610  WirelessPi-Native-Tools-Complete-SD.zip
