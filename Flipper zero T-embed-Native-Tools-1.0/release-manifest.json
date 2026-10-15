@@ -1,0 +1,47 @@
+{
+  "release": "WirelessPi-Native-Tools-1.0",
+  "firmware_version": "2.0.0-native-tools1",
+  "target": "lilygo_t_embed_cc1101",
+  "chip": "esp32s3",
+  "flash_bytes": 16777216,
+  "idf_commit": "4c2820d377d1375e787bcef612f0c32c1427d183",
+  "hardware_verified": false,
+  "flash_files": [
+    {
+      "path": "firmware/bootloader.bin",
+      "offset": "0x0",
+      "bytes": 20704,
+      "sha256": "c3e45b160c5a3a9a11636196f160f155ab69eee19627b11547f0d0554d1c532e"
+    },
+    {
+      "path": "firmware/partition-table.bin",
+      "offset": "0x8000",
+      "bytes": 3072,
+      "sha256": "61bb9b514297879a1a71c904f06a4c28ae5cf3dced83315aece8f23adab6a8e5"
+    },
+    {
+      "path": "firmware/furi_esp32.bin",
+      "offset": "0x10000",
+      "bytes": 3607984,
+      "sha256": "7256e559dff5e0b622cefb3a649373fbf863327305cb83a756f7489c9b350e7d"
+    },
+    {
+      "path": "firmware/ota_data_initial.bin",
+      "offset": "0xbf0000",
+      "bytes": 8192,
+      "sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f"
+    }
+  ],
+  "apps": [
+    {
+      "path": "SD/apps/Sub-GHz/rtl433.fap",
+      "bytes": 1420580,
+      "sha256": "3a5f7f17fe9cd9e41df1f05f59e5dc63914099b6ea7898d647f781c386ad4641"
+    },
+    {
+      "path": "SD/apps/WiFi/csploit_mini.fap",
+      "bytes": 76048,
+      "sha256": "93b0528734f59fe8f23a8b82b936c6e12d89c7d4a97c633051d4290e063c7bd5"
+    }
+  ]
+}
