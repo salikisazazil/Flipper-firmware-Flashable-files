@@ -1,0 +1,10 @@
+SD/apps/GPIO/bw16_r4tkn_i2c.fap: 54 firmware imports resolved; ESP32-S3/Xtensa ELF.
+SD/apps/Sub-GHz/proto_pirate.fap: 241 firmware imports resolved; ESP32-S3/Xtensa ELF.
+SD/apps/Sub-GHz/rtl433.fap: 125 firmware imports resolved; ESP32-S3/Xtensa ELF.
+SD/apps/WiFi/csploit_mini.fap: 69 firmware imports resolved; ESP32-S3/Xtensa ELF.
+SD/apps/WiFi/wardriver.fap: 167 firmware imports resolved; ESP32-S3/Xtensa ELF.
+SD/apps/WiFi/wdgwars_map.fap: 98 firmware imports resolved; ESP32-S3/Xtensa ELF.
+SD/apps/WiFi/wifite.fap: 45 firmware imports resolved; ESP32-S3/Xtensa ELF.
+Source comparison: Wardriver, WDGWars Map, BW16 I2C and ProtoPirate source trees match their recovered release archive byte for byte.
+ProtoPirate FAP title: ProtoPirate 3.6.3; 34 matching companion plugins included.
+Static compatibility checks only; no new physical-device tests or firmware changes.

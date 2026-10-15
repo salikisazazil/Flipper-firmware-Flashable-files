@@ -81,3 +81,18 @@ All source licenses and upstream notices are preserved. RTL433 decoder
 provenance is in `docs/RTL433-UPSTREAM.md`; the new cSploit Mini app and network
 adapter retain their MIT notices. Existing firmware components keep their
 original licenses.
+
+## Complete SD app bundle
+
+Copy the entire `SD/` contents to the SD card root, including `apps_assets/`. No firmware reflash is needed on WirelessPi Native Tools 1.0 for these packaged apps.
+
+| App | Version | SD path |
+| --- | --- | --- |
+| WIFITE | 0.8.1 compact | `apps/WiFi/wifite.fap` |
+| RTL433 | 1.1.6 | `apps/Sub-GHz/rtl433.fap` |
+| Wardriver | 1.5.2 | `apps/WiFi/wardriver.fap` |
+| WDGWars Map | 1.3 | `apps/WiFi/wdgwars_map.fap` |
+| BW16 I2C | 4.5 | `apps/GPIO/bw16_r4tkn_i2c.fap` |
+| ProtoPirate | 3.6.3 | `apps/Sub-GHz/proto_pirate.fap` |
+
+ProtoPirate requires all 34 `.fal` files under `apps_assets/proto_pirate/plugins/`. BW16 I2C requires its external module and matching module firmware. Versions identify the packaged source releases; some older FAP metadata uses a numeric build override. See `APP-VALIDATION.txt` for static import checks, which do not prove hardware behavior.

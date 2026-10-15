@@ -34,16 +34,46 @@
   ],
   "apps": [
     {
+      "path": "SD/apps/GPIO/bw16_r4tkn_i2c.fap",
+      "version": "4.5",
+      "bytes": 107556,
+      "sha256": "14337c2acfe99bba1d3a0c886c6d890774f90e084b783c32a3f6d8a7c54eb25f"
+    },
+    {
+      "path": "SD/apps/Sub-GHz/proto_pirate.fap",
+      "version": "3.6.3",
+      "bytes": 232580,
+      "sha256": "392f211d74b1fcb40c3b9525b2225733aebf37b6afadad587348cc7970b8064b"
+    },
+    {
       "path": "SD/apps/Sub-GHz/rtl433.fap",
+      "version": "1.1.6",
       "bytes": 1464880,
-      "sha256": "f5dcedaad408a08c23db98bfb2b97240a494dd6551dcb6509b9fb4507029f2b2",
-      "version": "1.1.6"
+      "sha256": "f5dcedaad408a08c23db98bfb2b97240a494dd6551dcb6509b9fb4507029f2b2"
     },
     {
       "path": "SD/apps/WiFi/csploit_mini.fap",
+      "version": "1.0",
       "bytes": 76048,
-      "sha256": "93b0528734f59fe8f23a8b82b936c6e12d89c7d4a97c633051d4290e063c7bd5",
-      "version": "1.0"
+      "sha256": "93b0528734f59fe8f23a8b82b936c6e12d89c7d4a97c633051d4290e063c7bd5"
+    },
+    {
+      "path": "SD/apps/WiFi/wardriver.fap",
+      "version": "1.5.2",
+      "bytes": 182616,
+      "sha256": "a6c305734d4153806d2ffda2e9aa5d24dcfba21d4344fa7077d9c047fb781ea7"
+    },
+    {
+      "path": "SD/apps/WiFi/wdgwars_map.fap",
+      "version": "1.3",
+      "bytes": 291496,
+      "sha256": "3ca266c7891b0dcb77eb11da289a134d34bdf5e3f6ae93b9c9fbdd97467dd46a"
+    },
+    {
+      "path": "SD/apps/WiFi/wifite.fap",
+      "version": "0.8.1",
+      "bytes": 24180,
+      "sha256": "c0f03cf2129b2928f4d5c2dea20ad3d0476f498fa11916f1561e737c80d77db4"
     }
   ],
   "source": {
@@ -58,7 +88,184 @@
         "path": "../RTL433-1.1.6-source.zip",
         "bytes": 1086728,
         "sha256": "9ac546c2b50b6ace191a26cff675175e8cb63d606a97e5b2eb02c45f3c18e325"
+      },
+      {
+        "path": "../WirelessPi-Native-Tools-All-Apps-source.zip",
+        "bytes": 1603887,
+        "sha256": "ac57e4b0f854f47846638110f9ddb87d3eb148a7d4114c23c9582893b4e29803"
       }
     ]
-  }
+  },
+  "app_assets": [
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_about.fal",
+      "bytes": 12628,
+      "sha256": "199dcfc3fb426ab1747e69277eae247955e793e096557479132b0c173aac5203"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_am.fal",
+      "bytes": 160372,
+      "sha256": "4daf3ece3f7ee94f58598e2ed06920dd99bec0a0d5c20c14730f32ed78afb94b"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_am_vag.fal",
+      "bytes": 39968,
+      "sha256": "1c476fbf2c75fc409836f07c5dccb44008ca123c85b721ad087dec05bbd44853"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_bf.fal",
+      "bytes": 70956,
+      "sha256": "41283d4591551106516cf6c8de771dde2966c609ff51400af6f6c36b9413768e"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_config.fal",
+      "bytes": 55776,
+      "sha256": "bfab9c5d528c48242dad028250c45d8066aaa8cba98700c4ee8d31a44c17105e"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_emulate.fal",
+      "bytes": 62088,
+      "sha256": "b53b907a7df258823f87307c9610bdf64bedee7600772ff69aca190f720a9ac8"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_fm.fal",
+      "bytes": 114944,
+      "sha256": "cacf825fd8cb14ff9dd491e56d99b176c7d58ce2534f2494b9e2be12140b9787"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_fm_f4.fal",
+      "bytes": 61484,
+      "sha256": "390d3da7a25132b11c24c967b5edb24063b3409e7a75ee83b6fc3ecd82bf13c0"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_fm_honda1.fal",
+      "bytes": 24320,
+      "sha256": "d1ae784b639c092c3d892d57eacf46e64c636a8718fdb3a256f81d536c00ac68"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_saved_info.fal",
+      "bytes": 32264,
+      "sha256": "062681940c0d4cc9ce048fda10b2d868177f7bade60a81272ea50734b1b7843b"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_sub_decode.fal",
+      "bytes": 131472,
+      "sha256": "ab791f454f1314bf2d85040b27ca8e2c2f0b257c0e91535a3172cd1a6c8ef817"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_chrysler_v0.fal",
+      "bytes": 33232,
+      "sha256": "54d51012b03fc84434c8e44c7fb42893005c84eec1e3d8a1331068bb4a254ce4"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_fiat_v0.fal",
+      "bytes": 27796,
+      "sha256": "9476bb1b85c638424293de1e5a4ca914c90604890cc561e40790f55b5717df46"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_fiat_v1.fal",
+      "bytes": 38084,
+      "sha256": "fac62ab7e615a46a9459f8c6bf6cb114531632962ad9efef0ed77f73bbcfbda5"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_ford_v0.fal",
+      "bytes": 31128,
+      "sha256": "57c641e6fbaf6dabfbbb5423e6a25dfba4ca7eb41ccec7db618ebedd37bbde29"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_ford_v1.fal",
+      "bytes": 41644,
+      "sha256": "4b2008956cdddee0f652e47c3384dbe52bd424da9c03509ce16aa5e20b777cc3"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_ford_v2.fal",
+      "bytes": 31804,
+      "sha256": "b04cc734f90d3daf6884086a57ec4c24895a17eb9f47fbf840cc2873ff388e2b"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_honda_static.fal",
+      "bytes": 29144,
+      "sha256": "403c1b525c2a8ebaae9174ddea2127c903cadb2c998e444f07adb6efc789c7c7"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_honda_v1.fal",
+      "bytes": 30368,
+      "sha256": "cf26ec8ef72428d81b83748c32b11dafa33740d1200c6591c7c8d6b31db30d65"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_honda_v2.fal",
+      "bytes": 33992,
+      "sha256": "0d17ab49ff0e954736448bd5f4c10d157e854c14ac9ddd04d29def463a01efbc"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_kia_v0.fal",
+      "bytes": 41892,
+      "sha256": "53ff86f672661d65f9003f9b9417daf074b6f08b655aa201ff8237df1d0937dd"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_kia_v1.fal",
+      "bytes": 28084,
+      "sha256": "7298a01b45e7dc7b0ec8be184e7864286dd1433a45eda9101d2b6457ed7ffa6f"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_kia_v2.fal",
+      "bytes": 26216,
+      "sha256": "28b8193318886772a82542586634d7373a5b70c653fc5dc860a63a05ea5a835c"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_kia_v3_v4.fal",
+      "bytes": 40320,
+      "sha256": "6262e6dce45bf6f52cd30168a574735ef91fa5636af9c57aa9110a9406f246a4"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_kia_v5.fal",
+      "bytes": 35064,
+      "sha256": "a3dba490b17aa89f641b99abeb6e743877f1d7de2179ca24e7c2c8d5f67437ee"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_kia_v6.fal",
+      "bytes": 39156,
+      "sha256": "571a43182e955b457a088e4c4896db370bd47e0e9a2367accb1583f24f966944"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_kia_v7.fal",
+      "bytes": 28716,
+      "sha256": "ff22cb9ed2b5156ec2bf8713dee3c41d9085ba8c34d6b86e89d47c47de033f36"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_mazda_v0.fal",
+      "bytes": 27732,
+      "sha256": "47a7c5f2bf1d979288a85b24bad6722398d7b0fb5506e0b25a4beda9c9b56c1a"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_psa.fal",
+      "bytes": 43868,
+      "sha256": "7c48d82b928ea278a4dc8e32236b75064fbade6070ef50eaa1049a735691c703"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_renault_v0.fal",
+      "bytes": 30960,
+      "sha256": "d5d26128e0f1ef2d1fece17cb301d40e0ab1b5b35781cb1f117a89f36c311365"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_renault_v1.fal",
+      "bytes": 43344,
+      "sha256": "bc5cb4f604b6126c4c027d3eb9accdb7f7d2f18a300bce8e426cb13f6cfcabb4"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_star_line.fal",
+      "bytes": 38424,
+      "sha256": "76b0cabce2415d3abef73b1c1219807e33c624fd9fbcf255eea1d3dbc77f1e0d"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_subaru.fal",
+      "bytes": 29396,
+      "sha256": "55d3b305a4341a75f34d5a943566e3c6af2debab32ff00360a8e0777218ecf6c"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_vag.fal",
+      "bytes": 60576,
+      "sha256": "8f56d5c576c78b7fbf2d150541f4cd401dc323bc69b40fbf5a3a5c4f05a07c1e"
+    }
+  ]
 }
