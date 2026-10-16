@@ -31,3 +31,11 @@ its current source and validation logs are included in the RTL433 source ZIP. Se
 for feature scope and hardware-validation limits. These are ESP32-port files,
 not firmware for a stock Flipper Zero. Original source licenses and notices
 remain with their respective components.
+
+## ProtoPirate asset correction
+
+The SD package now includes `apps_assets/proto_pirate/keystore/` and `models_db/`, previously omitted, alongside all 34 matching `pp_*.fal` plugins. These three data files match the existing published source archive byte for byte. Firmware and FAP binaries are unchanged. This corrects packaging; it is not a confirmed fix for every reported menu failure.
+
+Copy both `apps/` and `apps_assets/` to the SD card root. Use `apps/Sub-GHz/proto_pirate.fap` from this release. If your card also has `apps/SubGhz/proto_pirate.fap`, back up that older copy outside the apps folder to avoid launching the wrong app. Legacy `protopirate_*_plugin.fal` files are not required by this release; use the supplied `pp_*.fal` set. Preserve your captures and settings.
+
+The uploaded working-card archive contained duplicate ProtoPirate versions and older plugins; those duplicates were not added to this clean release. Both the main FAP and all 34 plugins were checked: 324 unique firmware imports, zero missing exports in the packaged firmware. Runtime behavior on affected devices remains unverified.
