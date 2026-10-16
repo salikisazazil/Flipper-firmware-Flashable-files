@@ -266,6 +266,21 @@
       "path": "SD/apps_assets/proto_pirate/plugins/pp_tx_vag.fal",
       "bytes": 60576,
       "sha256": "8f56d5c576c78b7fbf2d150541f4cd401dc323bc69b40fbf5a3a5c4f05a07c1e"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/keystore/encrypted",
+      "bytes": 2160,
+      "sha256": "4720863d57b7b157d3c291a9cca19a2025c289ebbb3b46e1f8fc4f4df4d3991c"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/keystore/vag",
+      "bytes": 266,
+      "sha256": "95543966bb8f6b9fbe412d87f68aae1868b601ea178f139b5f091a6942ea6ab4"
+    },
+    {
+      "path": "SD/apps_assets/proto_pirate/models_db/models.txt",
+      "bytes": 1452,
+      "sha256": "eb00f46a25d6a4320fda6f2794f2a9e70035897f4271b80a48026d13260504f5"
     }
   ]
 }
